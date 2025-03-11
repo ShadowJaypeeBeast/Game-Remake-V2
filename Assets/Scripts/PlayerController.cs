@@ -5,11 +5,16 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
+    //Jumping mechanics
+    private Collider2D coll;
+    [SerializeField] private LayerMask ground;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();  
+        rb = GetComponent<Rigidbody2D>();
+        // Jumping mechanics
+        coll = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -27,6 +32,11 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(-5, 0);
             transform.localScale = new Vector2(-1, 1);
+        }
+        // Jumping mechanics
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
         }
     }
 }
