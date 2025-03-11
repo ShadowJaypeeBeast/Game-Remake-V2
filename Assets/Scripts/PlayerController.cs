@@ -25,12 +25,14 @@ public class PlayerController : MonoBehaviour
         if (hDirection > 0)
         {
             rb.velocity = new Vector2(5, 0);
+            //flipping of character
             transform.localScale = new Vector2(1, 1);
         }
 
         else if (hDirection < 0)
         {
             rb.velocity = new Vector2(-5, 0);
+            //flipping of character
             transform.localScale = new Vector2(-1, 1);
         }
         // Jumping mechanics
