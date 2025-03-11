@@ -1,0 +1,4 @@
+repository "Game Remake V2/Game Remake V2@5773694465763@cloud"
+  path "/"
+    br "/main"
+    co "/main"
