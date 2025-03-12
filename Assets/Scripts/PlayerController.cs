@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     //Jumping mechanics
     private Collider2D coll;
     [SerializeField] private LayerMask ground;
+    public int cherry = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rb.velocity = new Vector2(rb.velocity.x, 10f);
+        }
+    }
+public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Collectable")
+        {
+            Destroy(collision.gameObject);
+            cherry += 1;
         }
     }
 }
