@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectable
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Collectibles
     uniqueID: 2129168195
+    locked: 0
+  - name: Enemy
+    uniqueID: 2023662965
     locked: 0
