@@ -107,13 +107,14 @@ public class PlayerController : MonoBehaviour
             }
         }
         else if (state == State.hurt)
-        {
-            if (Mathf.Abs(rb.velocity.x) < 0.1f)
-            {
-                state = State.idle; // Transition to idle
-            }
-        }
-        else if (Mathf.Abs(rb.velocity.x) > 2f)
+                {
+                    if (Mathf.Abs(rb.velocity.x) < 0.5f) // Lower threshold to transition back faster
+                    {
+                        rb.velocity = new Vector2(0, rb.velocity.y); // Stop lingering knockback
+                        state = State.idle;
+                    }
+                }
+                else if (Mathf.Abs(rb.velocity.x) > 2f)
         {
             state = State.run; // Transition to running
         }
