@@ -757,8 +757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.4, y: 121.2}
-  m_SizeDelta: {x: 12.359, y: 18.39}
+  m_AnchoredPosition: {x: -252.14, y: 120.3}
+  m_SizeDelta: {x: 46.884, y: 20.195}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959282863
 MonoBehaviour:
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -10.069595, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 987514158}
   - component: {fileID: 987514157}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: HealthNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -884,15 +884,15 @@ RectTransform:
   m_GameObject: {fileID: 987514155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0141, y: 1.0141, z: 1.0141}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 450438251}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269.06024, y: 103.17351}
-  m_SizeDelta: {x: 11.68, y: 14.053}
+  m_AnchoredPosition: {x: -267.8, y: 112.7}
+  m_SizeDelta: {x: 45.881, y: 17.2597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987514157
 MonoBehaviour:
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.9482422, y: 0, z: 190.24347, w: 31.034195}
+  m_margin: {x: 15.010005, y: 8.865706, z: -58.35062, w: 21.459236}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1025,7 +1025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -329.2, y: 122.2}
+  m_AnchoredPosition: {x: -288.4, y: 122.2}
   m_SizeDelta: {x: 115.7062, y: 18.7871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1064866000
@@ -1379,8 +1379,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -286.8, y: 86.6}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -243.19315, y: 87.806}
+  m_SizeDelta: {x: 206.1137, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314831204
 MonoBehaviour:
@@ -3664,9 +3664,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5709786277263696717, guid: 3a337ca8a9f781e42aa6c12735af5b3a, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709786277263696717, guid: 3a337ca8a9f781e42aa6c12735af5b3a, type: 3}
       propertyPath: cherryText
       value: 
       objectReference: {fileID: 959282863}
+    - target: {fileID: 5709786277263696717, guid: 3a337ca8a9f781e42aa6c12735af5b3a, type: 3}
+      propertyPath: healthAmount
+      value: 
+      objectReference: {fileID: 987514157}
     - target: {fileID: 5709786277263696717, guid: 3a337ca8a9f781e42aa6c12735af5b3a, type: 3}
       propertyPath: ground.m_Bits
       value: 64
